@@ -215,26 +215,26 @@ ul {
 }
 @media (min-width: 1200px) {
   #carousel_inicio .carousel-item img {
-    height: 470px;
+    height: 500px;
   }
 }
 @media (min-width: 1440px) {
   #carousel_inicio .carousel-item img {
-    height: 500px;
-  }
-}
-@media (min-width: 2500px) {
-  #carousel_inicio .carousel-item img {
     height: 600px;
   }
 }
+@media (min-width: 1600px) {
+  #carousel_inicio .carousel-item img {
+    height: 700px;
+  }
+}
 .btn-productos-carousel {
-  margin-top: 1rem;
   width: 20%;
+  text-align: left;
+  margin-top: 1rem;
   background-color: white;
   color: black;
   align-self: flex-start;
-  text-align: left;
   font-size: 2rem;
 }
 
@@ -362,6 +362,16 @@ ul {
   background-image: url("../img/contacta-con-nosotros.jpg");
 }
 
+@media (min-width: 1200px) {
+  .img-contacto {
+    height: 750px;
+  }
+}
+@media (min-width: 1800px) {
+  .img-contacto {
+    height: 850px;
+  }
+}
 .desc {
   font-size: 2rem;
 }
@@ -394,8 +404,8 @@ ul {
 
 @media (min-width: 992px) {
   #productos-inicio button:hover, .card button:hover, .button-conocer:hover, .btn-productos:hover {
-    background-color: red;
-    color: white;
+    background-color: red !important;
+    color: white !important;
     border: 1px solid red;
   }
 }
@@ -558,6 +568,14 @@ footer .col-12, footer .col-md-4 {
 }
 
 /*Filtros productos*/
+#todos {
+  display: none;
+}
+
+#todos:checked ~ .padre-cards .controlador, .padre-cards .all-in-one, .padre-cards .reproductor-dj {
+  display: flex !important;
+}
+
 #reproductor-dj, #controlador, #all-in-one {
   display: none;
 }
@@ -630,6 +648,30 @@ footer .col-12, footer .col-md-4 {
 
 #navbar-filtro-1 .dropdown-toggle {
   width: 100%;
+}
+
+#rep-dj:checked ~ .padre-cards .all-in-one, .padre-cards .controlador {
+  display: none !important;
+}
+
+#rep-dj:checked ~ .padre-cards .reproductor-dj {
+  display: flex !important;
+}
+
+#ctrol:checked ~ .padre-cards .reproductor-dj, .padre-cards .all-in-one {
+  display: none !important;
+}
+
+#ctrol:checked ~ .padre-cards .controlador {
+  display: flex !important;
+}
+
+#sist-in:checked ~ .padre-cards .sist-in {
+  display: flex !important;
+}
+
+#sist-in:checked ~ .padre-cards .all-in-one {
+  display: flex !important;
 }
 
 @media (min-width: 992px) {

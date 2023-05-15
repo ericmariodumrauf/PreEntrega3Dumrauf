@@ -1,4 +1,12 @@
 /*Filtros productos*/
+#todos{
+    display: none;
+}
+
+#todos:checked ~ .padre-cards .controlador, .padre-cards .all-in-one, .padre-cards .reproductor-dj {
+    display: flex!important;
+}
+
 #reproductor-dj, #controlador, #all-in-one {
     display: none;
 }
@@ -71,6 +79,30 @@
 
 #navbar-filtro-1 .dropdown-toggle{
     width: 100%;
+}
+
+#rep-dj:checked ~ .padre-cards .all-in-one, .padre-cards .controlador{
+    display: none!important;
+}
+
+#rep-dj:checked ~ .padre-cards .reproductor-dj{
+    display: flex!important;
+}
+
+#ctrol:checked ~ .padre-cards .reproductor-dj, .padre-cards .all-in-one{
+    display: none!important;
+}
+
+#ctrol:checked ~ .padre-cards .controlador{
+    display: flex!important;
+}
+
+#sist-in:checked ~ .padre-cards .sist-in{
+    display: flex!important;
+}
+
+#sist-in:checked ~ .padre-cards .all-in-one{
+    display: flex!important;
 }
 
 @media (min-width: 992px){

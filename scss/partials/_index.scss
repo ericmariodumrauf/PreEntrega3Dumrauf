@@ -72,19 +72,19 @@
 
 @media (min-width:1200px){
     #carousel_inicio .carousel-item img{
-        height: 470px;
+        height: 500px;
     }
 }
 
 @media (min-width:1440px){
     #carousel_inicio .carousel-item img{
-        height: 500px;
+        height: 600px;
     }
 }
 
-@media (min-width:2500px){
+@media (min-width:1600px){
     #carousel_inicio .carousel-item img{
-        height: 600px;
+        height: 700px;
     }
 }
 
@@ -239,6 +239,19 @@
     background-image: url("../img/contacta-con-nosotros.jpg");
 }
 
+@media (min-width:1200px){
+    .img-contacto{
+        height: 750px;
+    }
+}
+
+@media (min-width:1800px){
+    .img-contacto{
+        height: 850px;
+    }
+}
+
+
 .desc {
     font-size: 2rem;
 }
@@ -277,8 +290,8 @@
 
 @media (min-width:992px){
     #productos-inicio button:hover, .card button:hover, .button-conocer:hover, .btn-productos:hover{
-        background-color: red;
-        color: white;
+        background-color: red!important;
+        color: white!important;
         border: 1px solid red;
     }
 }
